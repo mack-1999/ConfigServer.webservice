@@ -1,0 +1,12 @@
+server:
+   port: 8083
+
+spring:
+   application:
+      name: CONFIG-SERVER
+   Cloud:
+      config:
+         server:
+            git:
+               uri: #Github URL
+               clone-on-start: true

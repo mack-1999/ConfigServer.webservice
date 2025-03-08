@@ -8,5 +8,14 @@ spring:
       config:
          server:
             git:
-               uri: #Github URL
+               uri: https://github.com/mack-1999/Hotel.Project.ConfigFiles
                clone-on-start: true
+
+eureka:
+   instance:
+      prefer-ip-address: true
+   client:
+      fetch-registry: true
+      registry-with-eureka: true
+      service-url:
+         defaultZone: http://localhost:8761/eureka
